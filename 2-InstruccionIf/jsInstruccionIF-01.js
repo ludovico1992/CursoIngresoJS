@@ -1,6 +1,23 @@
+//Ludovico Faro - Div X//
+
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	let edad;
+   
 
-}//FIN DE LA FUNCIÓN
+	edad= document.getElementById("txtIdEdad").value;
+    edad=parseInt(edad);
+
+	
+
+	if (edad==15)
+	{
+		alert("Niña Bonita");
+
+	}
+
+
+	
+
+
+}

@@ -1,8 +1,24 @@
+//Ludovico Faro - DIV X
+
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	let edad;
 
+edad= parseInt(document.getElementById("txtIdEdad").value);
 
+if (edad<13)
+{
+	alert("Ud es un niño");
 
-}//FIN DE LA FUNCIÓN
+}
+if (edad>=13 && edad <=17)
+{
+	alert ("Ud es un adolescente");
+}
+if (edad >17)
+{
+
+	alert("Ud es mayor de edad");
+}
+
+}
