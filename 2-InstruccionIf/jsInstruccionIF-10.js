@@ -1,29 +1,24 @@
+//Ludovico Faro - DIV
+
 function mostrar()
-{let numero;
-    let maximo;
-	let minimo; 
+{	let numeroAleatorio;
+	let vMaximo;
+	let vMinimo;
 
-	maximo=10;
-	minimo=1;
+	vMaximo=10;
+	vMinimo=1;
 
-
-	numero=parseInt(Math.round(Math.random() * (maximo - minimo)+ minimo ));
-
-
-	alert(numero);	
-
-	if (numero >8 && 10)
-	{
-
-		alert ("EXCELENTE")
+	numeroAleatorio=Math.round( Math.random() * (vMaximo - vMinimo) + vMinimo); 
+		
+	if (numeroAleatorio >=9) {
+		alert ("Excelente "+numeroAleatorio);
 	}
-	if (numero >4 && 8)
-	{
-	alert ("APROBO");
-}
-if (numero <4)
-{
-alert ("Vamos, la próxima se puede");
-
-}
+	else {
+	}
+	if (numeroAleatorio <4){
+	alert("Vamos la proxima se puede " +numeroAleatorio);
+	}
+	else {
+	alert ("Aprobo "+numeroAleatorio);
+	}
 }

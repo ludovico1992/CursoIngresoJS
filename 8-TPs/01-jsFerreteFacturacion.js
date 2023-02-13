@@ -12,13 +12,13 @@ function Sumar ()
     let suma;
 
     producto1=document.getElementById("txtIdPrecioUno").value;
-    producto1=parseInt(producto1);
+    producto1=parseFloat(producto1);
 
     producto2=document.getElementById("txtIdPrecioDos").value;
-    producto2=parseInt(producto2);
+    producto2=parseFloat(producto2);
 
     producto3=document.getElementById("txtIdPrecioTres").value;
-    producto3=parseInt(producto3);
+    producto3=parseFloat(producto3);
 
 
     suma= producto1+producto2+producto3;
@@ -44,7 +44,8 @@ function Promedio ()
     producto3=parseFloat(producto3);
 
     promedio= (producto1+producto2+producto3)/3;
-    
+    promedio.toFixed(2);
+
     alert ("El promedio es: "+promedio);
 
 }
@@ -54,6 +55,26 @@ function PrecioFinal ()
     let producto2;
     let producto3;
     let IVA;
+    let resultadoIvaIncluido;
 
-	
+	producto1=document.getElementById("txtIdPrecioUno").value;
+    producto1=parseFloat(producto1);
+
+    producto2=document.getElementById("txtIdPrecioDos").value;
+    producto2=parseFloat(producto2);
+
+
+    producto3=document.getElementById("txtIdPrecioTres").value;
+    producto3=parseFloat(producto3);
+
+    IVA = 1.21;
+    IVA=parseFloat(IVA);
+
+    resultadoIvaIncluido= (producto1+producto2+producto3)*IVA;
+    resultadoIvaIncluido.toFixed(2);
+    alert("El precio total con IVA incluido es: "+resultadoIvaIncluido);
+
+
+
+
 }

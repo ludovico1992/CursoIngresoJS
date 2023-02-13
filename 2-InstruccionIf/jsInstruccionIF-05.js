@@ -3,11 +3,11 @@
 function mostrar()
 {
 
-let edad;
+	let edad;
 
-edad= parseInt(document.getElementById("txtIdEdad").value);
+	edad= parseInt(document.getElementById("txtIdEdad").value);
 
-	if (edad<13)
+	if (edad<13 || edad>=18)
 	{
 		alert ("Ud no es adolescente.");
 	}

@@ -2,17 +2,15 @@
 
 function mostrar()
 {
-	let numero;
-    let maximo;
-	let minimo; 
+	let numeroAleatorio;
+	let numMaximo;
+	let numMinimo;
 
-	maximo=10;
-	minimo=1;
+	numMaximo=10;
+	numMinimo=1;
 
-
-	numero=Math.round(Math.random() * (maximo - minimo)+ minimo );
-
-
-	alert(numero);	
+	numeroAleatorio=Math.round(Math.random()*(numMaximo-numMinimo)+numMinimo);
+	
+	alert(numeroAleatorio);	
 
 }//FIN DE LA FUNCIÓN

@@ -11,16 +11,15 @@ function mostrar()
 
 
 	
-	if(edad >=18)
+	if(edad>=18)
 {
 
 	alert("Es mayor de edad");
 
 }
-if (edad<18){
+	else {
+		alert("Es menor de edad");
+	}
 
-alert ("Es menor de edad");
-
-}
 
 }

@@ -6,19 +6,20 @@ function mostrar()
 
 edad= parseInt(document.getElementById("txtIdEdad").value);
 
-if (edad<13)
+	if (edad<13)
 {
 	alert("Ud es un niño");
 
 }
-if (edad>=13 && edad <=17)
-{
-	alert ("Ud es un adolescente");
-}
-if (edad >17)
-{
+	else 
+	{
+		if (edad<18){
+			alert("Ud es un adolescente");
+		}
+		else {
+			alert("Ud es mayor de edad");
+		}
 
-	alert("Ud es mayor de edad");
-}
 
-}
+
+	}}
